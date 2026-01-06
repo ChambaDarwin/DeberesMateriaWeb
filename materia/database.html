@@ -432,9 +432,13 @@
 
         <h2>Descripción de la actividad</h2>
         <p>
-         Ingresa <a href="https://database.android-web.com/contenidos/normalizar1.html">aqui</a> y crea una página web en la que expliques de manera sencilla y ordenada
-          qué son las vistas en MySQL, para qué se utilizan y cuáles son sus
-          principales ventajas dentro de una base de datos relacional.
+          Ingresa
+          <a href="https://database.android-web.com/contenidos/normalizar1.html"
+            >aqui</a
+          >
+          y crea una página web en la que expliques de manera sencilla y
+          ordenada qué son las vistas en MySQL, para qué se utilizan y cuáles
+          son sus principales ventajas dentro de una base de datos relacional.
         </p>
 
         <p>
@@ -474,6 +478,138 @@
             </ul>
           </li>
         </ul>
+      </div>
+
+      <!-- Examen Final -->
+
+      <div>
+        <h1>Examen Final: Normalización de Base de Datos</h1>
+        <table border="1">
+          <tr>
+            <th>VentaID</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Dirección Cliente</th>
+            <th>Productos</th>
+            <th>Precios</th>
+            <th>Cantidades</th>
+            <th>Total Venta</th>
+            <th>Métodos de Pago</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>2025-01-10</td>
+            <td>Juan Pérez</td>
+            <td>Quito - Av. Colón 123</td>
+            <td>Laptop, Mouse</td>
+            <td>1200, 25</td>
+            <td>1, 2</td>
+            <td>1250</td>
+            <td>Tarjeta, Efectivo</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>2025-01-11</td>
+            <td>Ana López</td>
+            <td>Guayaquil - Calle 9 de Octubre 456</td>
+            <td>Teclado, Monitor, USB</td>
+            <td>45, 300, 15</td>
+            <td>1, 1, 3</td>
+            <td>390</td>
+            <td>Transferencia</td>
+          </tr>
+        </table>
+
+        <p>
+          A partir de la <strong>tabla no normalizada de ventas</strong>, el
+          estudiante deberá realizar la normalización de datos hasta la
+          <strong>Tercera Forma Normal (3FN)</strong>, diseñar un modelo de base
+          de datos y desarrollar una página web que utilice procedimientos
+          almacenados, vistas y triggers para gestionar y consultar la
+          información.
+        </p>
+
+        <h2>1. Normalización de la Base de Datos</h2>
+        <ul>
+          <li>Analizar la tabla no normalizada y eliminar redundancias.</li>
+          <li>Normalizar hasta <strong>3FN</strong>.</li>
+          <li>Crear las siguientes tablas como mínimo:</li>
+          <ul>
+            <li>Cliente</li>
+            <li>Venta</li>
+            <li>Producto</li>
+            <li>Detalle_Venta</li>
+            <li>Método_Pago</li>
+            <li>Pago</li>
+          </ul>
+          <li>Definir claves primarias, foráneas y tipos de datos.</li>
+        </ul>
+
+        <h2>2. Diagrama de la Base de Datos</h2>
+        <ul>
+          <li>Ingresar a <strong>dbdiagram.io</strong>.</li>
+          <li>Insertar las tablas resultantes de la normalización.</li>
+          <li>Establecer relaciones y capturar el diagrama.</li>
+          <li>Incluir el diagrama en la página web</li>
+        </ul>
+
+        <h2>3. Procedimientos Almacenados</h2>
+        <p>
+          Crear <strong>3 procedimientos almacenados</strong>, cada uno con una
+          función específica y una descripción de su propósito.
+        </p>
+
+        <h2>4. Triggers</h2>
+        <p>
+          Crear <strong>2 triggers</strong> que cumplan los siguientes
+          objetivos:
+        </p>
+        <ul>
+          <li>
+            Trigger de auditoría para registrar operaciones en tablas
+            importantes.
+          </li>
+          <li>Trigger para calcular automáticamente el total de una venta.</li>
+        </ul>
+
+        <h2>5. Vistas</h2>
+        <p>
+          Crear <strong>2 vistas</strong> que permitan consultar información
+          relevante sin exponer directamente las tablas:
+        </p>
+        <ul>
+          <li>Vista de resumen de compras por cliente.</li>
+          <li>Vista de detalle de ventas.</li>
+        </ul>
+
+        <h2>6. Requerimientos de la Vista Principal</h2>
+        <p>La vista principal debe mostrar únicamente:</p>
+        <ul>
+          <li>Datos del cliente</li>
+          <li>Productos comprados</li>
+          <li>Precio de cada producto</li>
+          <li>Suma total de la compra</li>
+        </ul>
+
+        <h2>7. Desarrollo de la Página Web</h2>
+        <ul>
+          <li>
+            Crear una página web que se conecte a la base de datos normalizada.
+          </li>
+          <li>
+            Utilizar los procedimientos almacenados para mostrar la información.
+          </li>
+          <li>Presentar los datos en una tabla HTML clara y ordenada.</li>
+        </ul>
+
+        <h2>Entregables</h2>
+
+        <p>
+          Script SQL con tablas, procedimientos, triggers y vistas. debe ser
+          enviado por interno al WhatsApp
+        </p>
       </div>
     </div>
   </body>
