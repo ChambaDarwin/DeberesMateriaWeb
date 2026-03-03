@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programación y Desarrollo de Software</title>
+  <link rel="stylesheet" href="../style/style_pdesarrollosoftware.css">
+  <link rel="icon" type="image/x-icon" href="../image/homework.png">
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <div class="nav-dot"></div>
+    Portal Académico
+  </div>
+  <a href="../index.html" class="nav-back">← Volver al inicio</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">🚀 Materia activa</div>
+    <h1>Programación y<br><span>Desarrollo de Software</span></h1>
+    <p>Completa los deberes, lecciones y el examen final. Cada actividad requiere código comentado y un video explicativo insertado en tu página web.</p>
+
+    <div class="guide-box">
+  <strong>📹 ¿Cómo insertar un video desde Google Drive?</strong>
+  <ol>
+    <li>Sube tu video a Google Drive.</li>
+    <li>Clic derecho → <em>Compartir</em> → cambia el acceso a <strong>"Cualquier persona con el enlace"</strong>.</li>
+    <li>Copia el enlace y extrae el <code>ID</code> que aparece entre <code>/d/</code> y <code>/view</code>.</li>
+    <li>Pega el ID en el siguiente código HTML dentro de tu página:</li>
+    <li>
+<pre><code>&lt;div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"&gt;
+  &lt;iframe src="https://drive.google.com/file/d/ID/preview"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="autoplay; encrypted-media" allowfullscreen&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+    </li>
+  </ol>
+</div>
+  </div>
+</div>
+
+<main>
+
+  <!-- ── DEBERES ── -->
+  <div class="section deber">
+    <div class="section-header">
+      <div class="section-icon">📝</div>
+      <div>
+        <h2>Deberes</h2>
+        <span class="sub">3 actividades · Python</span>
+      </div>
+    </div>
+
+    <!-- Deber 1 -->
+    <div class="instr">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+        <strong style="font-size:.95rem;">Deber 1 — Sentencia <code style="background:#f0ebe3;padding:2px 7px;border-radius:5px;font-size:.85rem;">if</code></strong>
+        <span style="font-size:.75rem;color:var(--text-muted);background:var(--bg);border:1px solid var(--border);padding:3px 9px;border-radius:20px;">10 ejercicios</span>
+      </div>
+      <p>Resuelve cada uno de los siguientes ejercicios utilizando sentencias condicionales en Python. Comenta cada línea de código para explicar su propósito.</p>
+      <ul class="ex-list">
+        <li><span class="ex-num">1</span>Pide un número al usuario y muestra si es mayor que 50.</li>
+        <li><span class="ex-num">2</span>Pide la edad de una persona y determina si puede votar (18 años o más).</li>
+        <li><span class="ex-num">3</span>Pide un número y verifica si es múltiplo de 3.</li>
+        <li><span class="ex-num">4</span>Pide una contraseña y comprueba si es igual a <code style="background:#f0ebe3;padding:1px 5px;border-radius:4px;">python123</code>.</li>
+        <li><span class="ex-num">5</span>Pide una nota del 0 al 10 y muestra si el estudiante está aprobado (≥ 7) o reprobado.</li>
+        <li><span class="ex-num">6</span>Pide dos números y muestra cuál de los dos es mayor.</li>
+        <li><span class="ex-num">7</span>Pide un número y determina si es positivo, negativo o cero.</li>
+        <li><span class="ex-num">8</span>Pide una letra e indica si es una vocal.</li>
+        <li><span class="ex-num">9</span>Pide una temperatura y muestra si hace frío (menos de 15 °C).</li>
+        <li><span class="ex-num">10</span>Pide un año e indica si es bisiesto usando únicamente condiciones.</li>
+      </ul>
+      <div class="deliverables">
+        <p>Entregables</p>
+        <ul>
+          <li>Video explicando cada ejercicio paso a paso (con cámara encendida).</li>
+          <li>Video insertado en tu página web.</li>
+          <li>Los 10 ejercicios con código comentado incluidos en la página.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Deber 2 -->
+    <div class="instr">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+        <strong style="font-size:.95rem;">Deber 2 — Bucles</strong>
+        <span style="font-size:.75rem;color:var(--text-muted);background:var(--bg);border:1px solid var(--border);padding:3px 9px;border-radius:20px;">10 ejercicios</span>
+      </div>
+      <p>Aplica estructuras de repetición (<code style="background:#f0ebe3;padding:1px 5px;border-radius:4px;">for</code> / <code style="background:#f0ebe3;padding:1px 5px;border-radius:4px;">while</code>) para resolver los siguientes problemas. Comenta el código de cada solución.</p>
+      <ul class="ex-list">
+        <li><span class="ex-num">1</span>Imprime los números del 1 al 10.</li>
+        <li><span class="ex-num">2</span>Imprime los números pares del 1 al 20.</li>
+        <li><span class="ex-num">3</span>Muestra la tabla de multiplicar del número que ingrese el usuario.</li>
+        <li><span class="ex-num">4</span>Imprime los números del 10 al 1 en orden descendente.</li>
+        <li><span class="ex-num">5</span>Pide un número y calcula la suma acumulada desde 1 hasta ese valor.</li>
+        <li><span class="ex-num">6</span>Cuenta cuántas vocales hay en una palabra ingresada por el usuario.</li>
+        <li><span class="ex-num">7</span>Solicita una contraseña repetidamente hasta que el usuario la ingrese de forma correcta.</li>
+        <li><span class="ex-num">8</span>Muestra los números del 1 al 50 que sean múltiplos de 5.</li>
+        <li><span class="ex-num">9</span>Pide 5 números al usuario e indica cuál es el mayor.</li>
+        <li><span class="ex-num">10</span>Imprime un triángulo de asteriscos de 5 filas (<code style="background:#f0ebe3;padding:1px 5px;border-radius:4px;">* / ** / *** …</code>).</li>
+      </ul>
+      <div class="deliverables">
+        <p>Entregables</p>
+        <ul>
+          <li>Video explicando cada ejercicio paso a paso.</li>
+          <li>Video insertado en tu página web.</li>
+          <li>Los 10 ejercicios con código comentado incluidos en la página.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Deber 3 -->
+    <div class="instr">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+        <strong style="font-size:.95rem;">Deber 3 — Funciones</strong>
+        <span style="font-size:.75rem;color:var(--text-muted);background:var(--bg);border:1px solid var(--border);padding:3px 9px;border-radius:20px;">10 ejercicios</span>
+      </div>
+      <p>Crea funciones en Python que resuelvan cada uno de los siguientes problemas. Recuerda comentar cada función indicando su propósito, parámetros y valor de retorno.</p>
+      <ul class="ex-list">
+        <li><span class="ex-num">1</span>Crea una función que muestre un mensaje de bienvenida personalizado.</li>
+        <li><span class="ex-num">2</span>Crea una función que reciba un número y determine si es par o impar.</li>
+        <li><span class="ex-num">3</span>Crea una función que reciba dos números y retorne su suma.</li>
+        <li><span class="ex-num">4</span>Crea una función que reciba una palabra y retorne su longitud.</li>
+        <li><span class="ex-num">5</span>Crea una función que reciba un número y retorne su cuadrado.</li>
+        <li><span class="ex-num">6</span>Crea una función que reciba tres números y retorne el mayor de ellos.</li>
+        <li><span class="ex-num">7</span>Crea una función que convierta una temperatura de Celsius a Fahrenheit.</li>
+        <li><span class="ex-num">8</span>Crea una función que reciba una lista de números y retorne la suma total.</li>
+        <li><span class="ex-num">9</span>Crea una función que retorne <code style="background:#f0ebe3;padding:1px 5px;border-radius:4px;">True</code> si un número es positivo, o <code style="background:#f0ebe3;padding:1px 5px;border-radius:4px;">False</code> si no lo es.</li>
+        <li><span class="ex-num">10</span>Crea una función que reciba una palabra y retorne la cadena invertida.</li>
+      </ul>
+      <div class="deliverables">
+        <p>Entregables</p>
+        <ul>
+          <li>Video explicando cada ejercicio paso a paso.</li>
+          <li>Video insertado en tu página web.</li>
+          <li>Los 10 ejercicios con código comentado incluidos en la página.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── LECCIONES ── -->
+  <div class="section leccion">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--green-light);">🎓</div>
+      <div>
+        <h2>Lecciones</h2>
+        <span class="sub">2 actividades</span>
+      </div>
+    </div>
+
+    <div class="instr">
+      <strong style="font-size:.92rem;display:block;margin-bottom:10px;">Lección 1 — Participación en Clase</strong>
+      <p>Esta nota es registrada directamente por el docente. Tu única responsabilidad es <strong>participar activamente</strong> durante las sesiones: responder preguntas, proponer ideas y colaborar con tus compañeros.</p>
+    </div>
+
+    <div class="instr">
+      <strong style="font-size:.92rem;display:block;margin-bottom:10px;">Lección 2 — Calculadora de IMC con Tkinter</strong>
+      <p>Desarrolla una aplicación de escritorio en Python que calcule el Índice de Masa Corporal (IMC) de una persona, utilizando la librería <code style="background:#f0ebe3;padding:1px 5px;border-radius:4px;">tkinter</code> para la interfaz gráfica.</p>
+      <div class="deliverables" style="background:var(--green-light);border-color:#b5d9c6;">
+        <p style="color:var(--green) !important;">Entregables</p>
+        <ul style="color:var(--green);">
+          <li>Video demostrando el funcionamiento del programa, insertado en la página web.</li>
+          <li>Capturas de pantalla de la interfaz de usuario.</li>
+          <li>Código fuente completo con comentarios explicativos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── EXAMEN ── -->
+  <div class="section examen">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--red-light);">🏆</div>
+      <div>
+        <h2>Examen</h2>
+        <span class="sub">Proyecto final · Práctico + Teórico</span>
+      </div>
+    </div>
+
+    <div class="instr">
+      <strong style="font-size:.92rem;display:block;margin-bottom:10px;">Examen Práctico — Proyecto de Aplicación</strong>
+      <p>Desarrolla un programa que resuelva un <strong>problema real de la vida cotidiana o del ámbito laboral</strong>. El proyecto debe contar con una interfaz gráfica de usuario (GUI). Algunos ejemplos de ideas:</p>
+      <ul class="ex-list" style="margin-top:10px;">
+        <li><span class="ex-num">💡</span>Calculadora de gastos personales mensuales.</li>
+        <li><span class="ex-num">💡</span>Agenda para organizar las tareas del día.</li>
+        <li><span class="ex-num">💡</span>Registro de notas o asistencias estudiantiles.</li>
+        <li><span class="ex-num">💡</span>Control de inventario básico para un negocio.</li>
+      </ul>
+    </div>
+
+    <div class="instr">
+      <strong style="font-size:.92rem;display:block;margin-bottom:10px;">Examen Teórico — Explicación de Conceptos</strong>
+      <p>Graba un video en el que expliques todos los conceptos de programación que utilizaste para construir tu proyecto del examen práctico. La explicación debe seguir este esquema:</p>
+      <ul class="ex-list" style="margin-top:10px;">
+        <li><span class="ex-num">📌</span>Nombra el concepto (ej. variables, bucles, funciones…).</li>
+        <li><span class="ex-num">📌</span>Explica con tus propias palabras qué es y para qué sirve.</li>
+        <li><span class="ex-num">📌</span>Muestra un ejemplo de código sencillo que lo ilustre.</li>
+      </ul>
+      <div class="deliverables" style="background:var(--red-light);border-color:#e0b8b8;">
+        <p style="color:var(--red) !important;">Entregables</p>
+        <ul style="color:var(--red);">
+          <li>Video teórico insertado en tu página web.</li>
+          <li>Cada ejemplo de código del video incluido en la página, con comentarios.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TABLA DE PONDERACIÓN ── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:#eef2ff;">⚖️</div>
+      <div>
+        <h2>Tabla de Ponderación</h2>
+        <span class="sub">Criterios de evaluación · Total: 10 puntos</span>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Puntos</th>
+            <th>Criterio de Evaluación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="pts">2</span></td>
+            <td>Diseño UI/UX de la página web</td>
+          </tr>
+          <tr>
+            <td><span class="pts">2</span></td>
+            <td>Código comentado y explicado en el video</td>
+          </tr>
+          <tr>
+            <td><span class="pts">5</span></td>
+            <td>Claridad en la explicación y desarrollo paso a paso de los ejercicios</td>
+          </tr>
+          <tr>
+            <td><span class="pts">1</span></td>
+            <td>Participación activa en clase</td>
+          </tr>
+          <tr class="total-row">
+            <td><span class="pts">10</span></td>
+            <td><strong>Total</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -1,75 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Académico</title>
-   <link rel="stylesheet" href="./style/style_index.css">
-   <link rel="icon" type="image/x-icon" href="./image/homework.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Académico</title>
+  <link rel="stylesheet" href="./style/style_index.css">
+  <link rel="icon" type="image/x-icon" href="./image/homework.png">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Deberes, Lecciones y Examen</h1>
-            <p class="subtitle">Selecciona la materia que estás cursando y realiza las actividades propuestas</p>
-        </header>
 
-        <div class="cards-grid" >
-            <div class="card" onclick="window.location.href='./materia/pvisualavanzada.html'">
-                <div class="icon-wrapper">💻</div>
-                <h2>Programación Visual Avanzada</h2>
-                <a href="./materia/pvisualavanzada.html" class="card-link">
-                    <span>Ver Actividades</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
+<nav>
+  <div class="nav-brand">
+    <div class="dot"></div>
+    Portal Académico
+  </div>
+  <div class="nav-right">
+    <span class="nav-badge">2025 – 2026</span>
+    <div class="avatar">ES</div>
+  </div>
+</nav>
 
-            <div class="card" onclick="window.location.href='./materia/database.html'">
-                <div class="icon-wrapper">🗄️</div>
-                <h2>Manejo de Base de Datos</h2>
-                <a href="./materia/database.html" class="card-link">
-                    <span>Ver Actividades</span>
-                    <span class="arrow">→</span>
-                </a>
-                
-            </div>
+<main>
 
-            <div class="card" onclick="window.location.href='./materia/programacionmovil.html'">
-                <div class="icon-wrapper">📱</div>
-                <h2>Programación Móvil</h2>
-                <a href="./materia/programacionmovil.html" class="card-link">
-                    <span>Ver Actividades</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-tag">📚 Ciclo Académico Activo</div>
+    <h1>Deberes, Lecciones<br>y <span>Exámenes</span></h1>
+    <p>Selecciona la materia que estás cursando y realiza las actividades propuestas por tu docente.</p>
+  </div>
 
-            <div class="card" onclick="window.location.href='./materia/electronica.html'">
-                <div class="icon-wrapper">⚡</div>
-                <h2>Electrónica Sistemas Digitales</h2>
-                <a href="./materia/electronica.html" class="card-link">
-                    <span>Ver Actividades</span>
-                    <span class="arrow">→</span>
-                </a>
-            </div>
+  <!-- Cards -->
+  <p class="section-label">Materias del período</p>
+  <div class="grid">
 
-            <div class="card" onclick="window.location.href='./materia/poo.html'">
-                <div class="icon-wrapper">🎯</div>
-                 <h2>Programación Orientada a Objetos</h2>
-                <a href="./materia/poo.html" class="card-link">
-                    <span>Ver Actividades</span>
-                    <span class="arrow">→</span>
-                </a> 
-            </div>
-
-            <div class="card" onclick="window.location.href='./materia/programacionDS.html'">
-                <div class="icon-wrapper">🚀</div>
-                <h2>Programación y Desarrollo de Software</h2>
-                 <a href="./materia/programacionDS.html" class="card-link">
-                    <span>Ver Actividades</span>
-                    <span class="arrow">→</span>
-                </a> 
-            </div>
-        </div>
+    <div class="card c1" onclick="window.location.href='./materia/pvisualavanzada.html'">
+      <div class="card-header">
+        <div class="icon-box">💻</div>
+        <span class="card-tag">Semestre 5</span>
+      </div>
+      <h2>Programación Visual Avanzada</h2>
+      <p class="card-desc">Interfaces gráficas, eventos y componentes avanzados con frameworks modernos.</p>
+      <div class="card-footer">
+        <span class="card-meta">📋 4 actividades</span>
+        <a href="./materia/pvisualavanzada.html" class="card-link">
+          Ver actividades <span class="arrow">→</span>
+        </a>
+      </div>
     </div>
+
+    <div class="card c2" onclick="window.location.href='./materia/database.html'">
+      <div class="card-header">
+        <div class="icon-box">🗄️</div>
+        <span class="card-tag">Semestre 5</span>
+      </div>
+      <h2>Manejo de Base de Datos</h2>
+      <p class="card-desc">Modelado, consultas SQL, transacciones y optimización de bases de datos relacionales.</p>
+      <div class="card-footer">
+        <span class="card-meta">📋 3 actividades</span>
+        <a href="./materia/database.html" class="card-link">
+          Ver actividades <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="card c3" onclick="window.location.href='./materia/programacionmovil.html'">
+      <div class="card-header">
+        <div class="icon-box">📱</div>
+        <span class="card-tag">Semestre 5</span>
+      </div>
+      <h2>Programación Móvil</h2>
+      <p class="card-desc">Desarrollo de aplicaciones nativas y multiplataforma para dispositivos Android e iOS.</p>
+      <div class="card-footer">
+        <span class="card-meta">📋 2 actividades</span>
+        <a href="./materia/programacionmovil.html" class="card-link">
+          Ver actividades <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="card c4" onclick="window.location.href='./materia/electronica.html'">
+      <div class="card-header">
+        <div class="icon-box">⚡</div>
+        <span class="card-tag">Semestre 4</span>
+      </div>
+      <h2>Electrónica Sistemas Digitales</h2>
+      <p class="card-desc">Circuitos digitales, lógica combinacional, secuencial y microcontroladores.</p>
+      <div class="card-footer">
+        <span class="card-meta">📋 5 actividades</span>
+        <a href="./materia/electronica.html" class="card-link">
+          Ver actividades <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="card c5" onclick="window.location.href='./materia/poo.html'">
+      <div class="card-header">
+        <div class="icon-box">🎯</div>
+        <span class="card-tag">Semestre 4</span>
+      </div>
+      <h2>Programación Orientada a Objetos</h2>
+      <p class="card-desc">Clases, herencia, polimorfismo y patrones de diseño aplicados en proyectos reales.</p>
+      <div class="card-footer">
+        <span class="card-meta">📋 6 actividades</span>
+        <a href="./materia/poo.html" class="card-link">
+          Ver actividades <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="card c6" onclick="window.location.href='./materia/programacionDS.html'">
+      <div class="card-header">
+        <div class="icon-box">🚀</div>
+        <span class="card-tag">Semestre 4</span>
+      </div>
+      <h2>Programación y Desarrollo de Software</h2>
+      <p class="card-desc">Metodologías ágiles, ciclo de vida del software, pruebas y despliegue en producción.</p>
+      <div class="card-footer">
+        <span class="card-meta">📋 3 actividades</span>
+        <a href="./materia/programacionDS.html" class="card-link">
+          Ver actividades <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  Portal Académico · Institución Educativa · Todos los derechos reservados 2026
+</footer>
+
 </body>
 </html>
